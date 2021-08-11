@@ -8290,6 +8290,10 @@ body {
           transform: rotate(90deg);
 }
 
+.maincontainer .collapsible:last-child .collapsible-header {
+  border-bottom: none;
+}
+
 .maincontainer .collapsible .collapsible-body {
   height: 0;
   overflow-y: hidden;
@@ -8323,15 +8327,20 @@ body {
 
 @media screen and (min-width: 960px) {
   .maincontainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     max-width: 1100px;
     margin-left: 280px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0px;
     padding-top: 332px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto minmax(auto, 380px);
+        grid-template-rows: auto minmax(auto, 380px);
+    max-height: 1300px;
   }
   .maincontainer-menu {
     -webkit-box-orient: vertical;
