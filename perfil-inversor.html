@@ -22,7 +22,8 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
-                    <img loading="lazy" src="media/logo.svg" class="isologo">
+                    <img loading="lazy" src="media/logo.svg" class="logo-d">
+                    <img loading="lazy" src="media/logo-m.svg" class="logo-m">
                     <p>Black Hound</p>
                 </a>
 
@@ -32,25 +33,48 @@
                 </a>
             </div>
 
-            <div id="navbar" class="navbar-menu is-justify-content-flex-end">
+            <ul id="navbar" class="navbar-menu is-justify-content-flex-end">
+                <li>
+                    <a href="index.html" class="navbar-item">
+                        Proyectos
+                    </a>
+                </li>
+                <li class="navbar-item has-dropdown is-hoverable">
+                    <a href="nosotros.html" class="navbar-item">
+                        Sobre nosotros
+                    </a>
+                    <div class="navbar-dropdown">
 
-                <a href="index.html" class="navbar-item">
-                    Proyectos
-                </a>
+                        <a href="servicios.html" class="navbar-item">
+                            Desarrollos
+                        </a>
 
-                <a href="nosotros.html" class="navbar-item">
-                    Sobre nosotros
-                </a>
+                        <a href="servicios.html" class="navbar-item">
+                            Construcción
+                        </a>
 
-                <a href="faqs.html" class="navbar-item">
-                    Faq's
-                </a>
-
-                <a href="perfil-inversor.html" class="navbar-item">
-                    Perfil de inversor
-                </a>
-
-            </div>
+                        <a href="servicios.html" class="navbar-item">
+                            Agro
+                        </a>
+                        <a href="servicios.html" class="navbar-item">
+                            Finanzas
+                        </a>
+                        <a href="servicios.html" class="navbar-item">
+                            Ver todos
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="faqs.html" class="navbar-item">
+                        Faq's
+                    </a>
+                </li>
+                <li>
+                    <a href="perfil-inversor.html" class="navbar-item">
+                        Perfil de inversor
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -82,8 +106,8 @@
                                         <li class="glide__slide">
                                             <div class="bienvenido">
                                                 <div class="bienvenido-title">
-                                                    <h1>¡Bienvenido/a!</h1>
-                                                    <img src="" alt="">
+                                                    <h1 class="f-title">¡Bienvenido/a!</h1>
+                                                    <img src="media/ico/chat-bubble.svg" alt="">
                                                 </div>
                                                 <div class="bienvenido-info">
                                                     <h2>Queremos que saques el mayor rédito posible de tus inversiones.
@@ -93,58 +117,74 @@
                                                         algunos datos de contacto para poder enviarte los resultados.
                                                     </p>
                                                 </div>
-                                            </div>
-                                            <p><span class="wpcf7-form-control-wrap name"><input type="text" name="name"
-                                                        value="" size="40"
+                                                <span class="wpcf7-form-control-wrap name"><input type="text"
+                                                        name="name" value="" size="40" placeholder="¿Cómo es tu nombre?"
                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                         aria-required="true" aria-invalid="false"></span>
-                                            </p>
-                                            <div data-glide-el="controls">
+                                            </div>
+
+
+                                            <div class="controls" data-glide-el="controls">
                                                 <button class="adelante" data-glide-dir=">">Comenzar</button>
                                             </div>
                                         </li>
-                                        <li class="glide__slide">
+                                        <li class="glide__slide choices">
                                             <h2>¿Cómo definís tu conocimiento sobre las alternativas de inversión en el
                                                 mercado de capitales?</h2>
-                                            <p><span class="wpcf7-form-control-wrap conocimiento"><span
-                                                        class="wpcf7-form-control wpcf7-radio"><span
-                                                            class="wpcf7-list-item first"><label><input type="radio"
-                                                                    name="conocimiento"
-                                                                    value="Nulo. No conozco ni realicé inversiones antes."
-                                                                    checked="checked"><span
-                                                                    class="wpcf7-list-item-label">Nulo. No
-                                                                    conozco
-                                                                    ni realicé inversiones
-                                                                    antes.</span></label></span><span
-                                                            class="wpcf7-list-item"><label><input type="radio"
-                                                                    name="conocimiento"
-                                                                    value="Poco. Sólo utilizo servicios bancarios (ej: Plazo Fijo)"><span
-                                                                    class="wpcf7-list-item-label">Poco. Sólo utilizo
-                                                                    servicios bancarios
-                                                                    (ej: Plazo Fijo)</span></label></span><span
-                                                            class="wpcf7-list-item"><label><input type="radio"
-                                                                    name="conocimiento"
-                                                                    value="Intermedio. Realicé algunas inversiones y conozco los riesgos del mercado"><span
-                                                                    class="wpcf7-list-item-label">Intermedio. Realicé
-                                                                    algunas
-                                                                    inversiones y
-                                                                    conozco los riesgos del
-                                                                    mercado</span></label></span><span
-                                                            class="wpcf7-list-item last"><label><input type="radio"
-                                                                    name="conocimiento"
-                                                                    value="Experto. Tengo el conocimiento necesario y la experiencia"><span
-                                                                    class="wpcf7-list-item-label">Experto. Tengo el
-                                                                    conocimiento
-                                                                    necesario y
-                                                                    la
-                                                                    experiencia</span></label></span></span></span>
-                                            </p>
-                                            <div data-glide-el="controls">
+                                            <span class="wpcf7-form-control-wrap conocimiento">
+                                                <span class="wpcf7-form-control wpcf7-radio">
+                                                    <span class="wpcf7-list-item first">
+                                                        <input id="c-nulo" type="radio" name="conocimiento"
+                                                            value="Nulo. No conozco ni realicé inversiones antes."
+                                                            checked="checked">
+                                                        <label for="c-nulo">
+                                                            <p class="wpcf7-list-item-label">Nulo. No conozco ni
+                                                                realicé inversiones
+                                                                antes.</p>
+                                                        </label>
+                                                    </span>
+                                                    <span class="wpcf7-list-item">
+                                                        <input id="c-poco" type="radio" name="conocimiento"
+                                                            value="Poco. Sólo utilizo servicios bancarios (ej: Plazo Fijo)">
+                                                        <label for="c-poco">
+                                                            <p class="wpcf7-list-item-label">
+                                                                Poco. Sólo utilizo
+                                                                servicios bancarios
+                                                                (ej: Plazo Fijo)
+                                                            </p>
+                                                        </label>
+                                                    </span>
+                                                    <span class="wpcf7-list-item">
+                                                        <input id="c-intermedio" type="radio" name="conocimiento"
+                                                            value="Intermedio. Realicé algunas inversiones y conozco los riesgos del mercado">
+                                                        <label for="c-intermedio">
+                                                            <p class="wpcf7-list-item-label">Intermedio. Realicé
+                                                                algunas
+                                                                inversiones y
+                                                                conozco los riesgos del
+                                                                mercado</p>
+                                                        </label>
+                                                    </span>
+                                                    <span class="wpcf7-list-item last">
+                                                        <input id="c-experto" type="radio" name="conocimiento"
+                                                            value="Experto. Tengo el conocimiento necesario y la experiencia">
+                                                        <label for="c-experto">
+                                                            <p class="wpcf7-list-item-label">Experto. Tengo el
+                                                                conocimiento
+                                                                necesario y
+                                                                la
+                                                                experiencia</p>
+                                                        </label>
+                                                    </span>
+                                                </span>
+                                            </span>
+
+                                            <div class="controls" data-glide-el="controls">
                                                 <button class="atras" data-glide-dir="<">Volver</button>
                                                 <button class="adelante" data-glide-dir=">">Continuar</button>
                                             </div>
                                         </li>
-                                        <li class="glide__slide">
+                                        <li class="glide__slide choices">
                                             <h2>¿Qué porcentaje de tus ingresos/ahorros
                                                 invertirías?</h2>
                                             <p><span class="wpcf7-form-control-wrap porcentaje"><span
@@ -167,12 +207,12 @@
                                                                     class="wpcf7-list-item-label">Hasta el
                                                                     75%</span></label></span></span></span>
                                             </p>
-                                            <div data-glide-el="controls">
+                                            <div class="controls" data-glide-el="controls">
                                                 <button class="atras" data-glide-dir="<">Volver</button>
                                                 <button class="adelante" data-glide-dir=">">Continuar</button>
                                             </div>
                                         </li>
-                                        <li class="glide__slide">
+                                        <li class="glide__slide choices">
                                             <h2>¿Qué esperas de tus inversiones?</h2>
                                             <p><span class="wpcf7-form-control-wrap expectativas"><span
                                                         class="wpcf7-form-control wpcf7-radio"><span
@@ -197,12 +237,12 @@
                                                                     la tasa de
                                                                     inflación.</span></label></span></span></span>
                                             </p>
-                                            <div data-glide-el="controls">
+                                            <div class="controls" data-glide-el="controls">
                                                 <button class="atras" data-glide-dir="<">Volver</button>
                                                 <button class="adelante" data-glide-dir=">">Continuar</button>
                                             </div>
                                         </li>
-                                        <li class="glide__slide">
+                                        <li class="glide__slide choices">
                                             <h2>¿Cuál es el plazo máximo que estarías dispuesto a mantener tus
                                                 inversiones?</h2>
                                             <p><span class="wpcf7-form-control-wrap plazo"><span
@@ -228,12 +268,12 @@
                                                                     10
                                                                     años.</span></label></span></span></span>
                                             </p>
-                                            <div data-glide-el="controls">
+                                            <div class="controls" data-glide-el="controls">
                                                 <button class="atras" data-glide-dir="<">Volver</button>
                                                 <button class="adelante" data-glide-dir=">">Continuar</button>
                                             </div>
                                         </li>
-                                        <li class="glide__slide">
+                                        <li class="glide__slide choices">
                                             <h2>¿Con qué moneda te gustaría realizar tus operaciones?</h2>
                                             <p><span class="wpcf7-form-control-wrap moneda"><span
                                                         class="wpcf7-form-control wpcf7-radio"><span
@@ -246,15 +286,15 @@
                                                                     name="moneda" value="Dólares."><span
                                                                     class="wpcf7-list-item-label">Dólares.</span></label></span></span></span>
                                             </p>
-                                            <div data-glide-el="controls">
+                                            <div class="controls" data-glide-el="controls">
                                                 <button class="atras" data-glide-dir="<">Volver</button>
                                                 <button class="adelante" data-glide-dir=">">Continuar</button>
                                             </div>
                                         </li>
-                                        <li class="glide__slide">
+                                        <li class="glide__slide ultimo">
                                             <div class="final">
                                                 <div class="final-title">
-                                                    <h2>¡Estupendo!</h2>
+                                                    <h2 f-title>¡Estupendo!</h2>
                                                 </div>
                                                 <div class="final-info">
                                                     <p>Nos comunicaremos en las próximas horas para enviarte el
@@ -263,8 +303,8 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <p><span class="wpcf7-form-control-wrap medio-comunicacion"><span
-                                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            <p><span class="wpcf7-form-control-wrap medio-comunicacion">
+                                                    <span class="wpcf7-form-control wpcf7-checkbox"><span
                                                             class="wpcf7-list-item first"><label><input type="checkbox"
                                                                     name="medio-comunicacion[]" value="Llamada"><span
                                                                     class="wpcf7-list-item-label">Llamada</span></label></span><span
@@ -289,7 +329,7 @@
                                                     class="wpcf7-form-control wpcf7-submit"><span
                                                     class="ajax-loader"></span>
                                             </p>
-                                            <div data-glide-el="controls">
+                                            <div class="controls" data-glide-el="controls">
                                                 <button class="atras" data-glide-dir="<">Volver</button>
                                             </div>
                                         </li>
@@ -418,7 +458,6 @@
         perView: 1,
         //     autoplay: 4500,
         hoverpause: false,
-        gap: 0,
         animationDuration: 600,
     };
     new Glide(".form-glide", config_form).mount();

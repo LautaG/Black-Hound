@@ -7739,13 +7739,32 @@ body {
 }
 
 .header .navbar a:hover {
-  background-color: initial;
-  color: #f73521;
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  color: #4d4d4d;
 }
 
 .header .navbar a.button:hover {
   background-color: #f73521;
   color: #fff;
+}
+
+.header .navbar-dropdown {
+  padding: 0px;
+}
+
+.header .navbar-dropdown a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 40px 15px 40px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header .navbar-dropdown a:last-child {
+  border: none;
 }
 
 .header .burguer-ico {
@@ -8018,7 +8037,7 @@ body {
     -webkit-box-shadow: 0px 3px 6px #00000029;
             box-shadow: 0px 3px 6px #00000029;
   }
-  .header .isologo {
+  .header .logo-d {
     width: 44px;
     max-height: initial;
   }

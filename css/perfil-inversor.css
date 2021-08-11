@@ -7739,13 +7739,32 @@ body {
 }
 
 .header .navbar a:hover {
-  background-color: initial;
-  color: #f73521;
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  color: #4d4d4d;
 }
 
 .header .navbar a.button:hover {
   background-color: #f73521;
   color: #fff;
+}
+
+.header .navbar-dropdown {
+  padding: 0px;
+}
+
+.header .navbar-dropdown a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 40px 15px 40px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header .navbar-dropdown a:last-child {
+  border: none;
 }
 
 .header .burguer-ico {
@@ -8018,7 +8037,7 @@ body {
     -webkit-box-shadow: 0px 3px 6px #00000029;
             box-shadow: 0px 3px 6px #00000029;
   }
-  .header .isologo {
+  .header .logo-d {
     width: 44px;
     max-height: initial;
   }
@@ -8200,7 +8219,182 @@ body {
   }
 }
 
-.glide__slides {
+.formulario {
+  margin-top: 145px;
+  margin-bottom: 76px;
+}
+
+.formulario .cont {
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
+}
+
+.formulario .form-glide {
+  width: 100%;
+}
+
+.formulario .form-glide .glide__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formulario .form-glide .controls {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.formulario .form-glide .controls button {
+  font-size: 21px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #f73521;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.formulario .form-glide .controls button:focus-visible {
+  outline: none;
+}
+
+.formulario .form-glide .controls button.atras {
+  background-color: #4d4d4d;
+}
+
+.formulario .form-glide .bienvenido,
+.formulario .form-glide .final {
+  padding: 1px;
+}
+
+.formulario .form-glide .bienvenido-title,
+.formulario .form-glide .final-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 22px;
+          column-gap: 22px;
+  margin-bottom: 2rem;
+}
+
+.formulario .form-glide .bienvenido-title h1,
+.formulario .form-glide .bienvenido-title h2,
+.formulario .form-glide .final-title h1,
+.formulario .form-glide .final-title h2 {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.formulario .form-glide .bienvenido-title img,
+.formulario .form-glide .final-title img {
+  width: 46px;
+}
+
+.formulario .form-glide .bienvenido-info,
+.formulario .form-glide .final-info {
+  margin-bottom: 60px;
+}
+
+.formulario .form-glide .bienvenido-info h2,
+.formulario .form-glide .final-info h2 {
+  font-size: 17px;
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+
+.formulario .form-glide .bienvenido-info p,
+.formulario .form-glide .final-info p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.formulario .form-glide .bienvenido input,
+.formulario .form-glide .final input {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+.formulario .form-glide .bienvenido input:focus-visible,
+.formulario .form-glide .final input:focus-visible {
+  outline: none;
+}
+
+.formulario .form-glide .choices {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 110px auto auto;
+      grid-template-rows: 110px auto auto;
+}
+
+.formulario .form-glide .choices h2 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+
+.formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio .wpcf7-list-item-label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.formulario .form-glide .final .wpcf7-form-control.wpcf7-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+
+.formulario .glide__slides {
   -webkit-transform: none !important;
           transform: none !important;
   width: auto !important;
@@ -8209,7 +8403,7 @@ body {
       grid-template-areas: "slide";
 }
 
-.glide__slide {
+.formulario .glide__slide {
   position: relative;
   opacity: 0;
   -webkit-transition: opacity 0.5s ease;
@@ -8219,12 +8413,8 @@ body {
   grid-area: slide;
 }
 
-.glide__slide--active {
+.formulario .glide__slide--active {
   z-index: 1;
   opacity: 1;
-}
-
-.formulario {
-  margin-top: 80px;
 }
 /*# sourceMappingURL=perfil-inversor.css.map */

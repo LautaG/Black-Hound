@@ -62,8 +62,9 @@
 
 .glide__bullet {
     background-color: #dadbdc;
-    width: 58px;
-    height: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
     padding: 0;
     border: 2px solid transparent;
     transition: all .3s ease-in-out;
@@ -97,7 +98,7 @@
 }
 
 .glide__bullet--active {
-    background-color: #8b8a63
+    background-color: #f73521
 }
 
 .glide--swipeable {
