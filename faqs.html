@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html id="htmlpadre" lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/faqs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header" class="header">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img loading="lazy" src="media/logo.svg" class="isologo">
+                    <p>Black Hound | Faq's</p>
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar"
+                    style="height: fit-content; width: fit-content;">
+                    <img aria-hidden="true" src="media/ico/burguer.svg" alt="" srcset="" class="burguer-ico">
+                </a>
+            </div>
+
+            <div id="navbar" class="navbar-menu is-justify-content-flex-end">
+
+                <a href="index.html" class="navbar-item">
+                    Proyectos
+                </a>
+
+                <a href="quienes-somos.html" class="navbar-item">
+                    Sobre nosotros
+                </a>
+
+                <a href="servicios.html" class="navbar-item">
+                    Faq's
+                </a>
+
+                <a href="creditos.html" class="navbar-item">
+                    Perfil de inversor
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <div class="maincontainer-info-menu is-flex">
+        <button id="boton-empresa" onclick="FAQE()" class="active">Empresa</button>
+        <button id="boton-historia" onclick="FAQI()" class="">Historia</button>
+        <button id="boton-socios" onclick="FAQP()" class="">Socios</button>
+    </div>
+    <article class="maincontainer-empresa">
+        <div class='cont'>
+            <div class='collapsible' id='c-1'>
+                <div class='collapsible-header is-clickable' data-controls='c-1'>
+                    <h3 class=''>¿Qué es Black Hound?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Somos un marketplace de inversiones que busca revolucionar el mundo de las
+                            finanzas. Le
+                            acercamos a todo tipo de inversor la posibilidad de participar de proyectos y negocios
+                            reales con altas tasas de rentabilidad.
+                        </p>
+                        <p class="block"> Por Black Hound podes:
+                            Invertir en proyectos de diferentes industrias como inmobiliarios, finanzas, agronegocios,
+                            franquicias y mucho más. Invertir en proyectos de finanzas descentralizadas. Trabajamos de
+                            manera transparente, fácil y rápida.
+                            El modelo consiste en acercarles a las personas la posibilidad de percibir la potencial
+                            renta y/o revalorización estimada de los activos inmobiliarios con la seguridad que
+                            conllevan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-2'>
+                <div class='collapsible-header is-clickable' data-controls='c-2'>
+                    <h3 class=''>Historia</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Somos parte de un conjunto de empresas denominado Grupo Delsud. Se trata de
+                            múltiples negocios que apuestan día a día por el crecimiento nacional. La empresa cumplió
+                            recientemente sus tres años de antigüedad, recorrido durante el cual ha duplicado la
+                            cantidad de negocios existentes y superado ampliamente todos los objetivos.
+
+                        </p>
+                        <p class="block"> Black Hound nace con la intención de permitir que distintos inversores
+                            puedan gestionar sus participaciones en los proyectos de forma muy simple, con la
+                            posibilidad ser parte de más de un proyecto a la vez.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-3'>
+                <div class='collapsible-header is-clickable' data-controls='c-3'>
+                    <h3 class=''>¿Con qué socios trabajamos?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Trabajamos con negocios de distintos rubros.
+                        </p>
+                        <div class="empresas">
+                            <div><img src="media/marcas/marcas-1.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-2.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-3.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-4.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-5.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-6.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-7.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-8.svg" alt=""></div>
+                            <div><img src="media/marcas/marcas-1.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="maincontainer-invertir">
+        <div class='cont'>
+            <div class='collapsible' id='c-4'>
+                <div class='collapsible-header is-clickable' data-controls='c-4'>
+                    <h3 class=''>¿Quién puede participar?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Cualquier persona física o jurídica, mayor de 18 años.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-5'>
+                <div class='collapsible-header is-clickable' data-controls='c-5'>
+                    <h3 class=''>¿Cómo puedo invertir?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">El procedimiento es muy sencillo.
+                        </p>
+                        <ol class="block">
+                            <li>Elegí el proyecto que sea de tu preferencia.</li>
+                            <li>Comunicate con nosotros o calculá tu crédito para que podamos ofrecerte las opciones
+                                disponibles. </li>
+                            <li>¡Listo! Los detalles de tu inversión serán atendidos por un miembro de nuestro equipo
+                                para continuar.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-6'>
+                <div class='collapsible-header is-clickable' data-controls='c-6'>
+                    <h3 class=''>¿Cuál es el monto mínimo?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">El monto de mínimo dependerá de cada proyecto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-7'>
+                <div class='collapsible-header is-clickable' data-controls='c-7'>
+                    <h3 class=''>¿Cuándo voy a recuperar mi participación?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Los potenciales retornos y/o distribuciones estimadas, así como también el
+                            calendario de fondeo del proyecto varían según cada proyecto. Los plazos y rendimientos
+                            estimados estarán explicados en detalle en cada una de las carteras.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="maincontainer-proyectos">
+        <div class='cont'>
+            <div class='collapsible' id='c-8'>
+                <div class='collapsible-header is-clickable' data-controls='c-8'>
+                    <h3 class=''>¿Puedo participar en todos los proyectos?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Sí. En Black Hound podés participar en todos los proyectos que desees al mismo
+                            tiempo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-9'>
+                <div class='collapsible-header is-clickable' data-controls='c-9'>
+                    <h3 class=''>¿Cuáles son los tiempos de los proyectos?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Los plazos de cada proyecto dependerán íntegramente de sus características,
+                            pudiendo variar de uno a otro.
+                            La información específica de cada uno estará disponible en el apartado "Proyectos"
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-10'>
+                <div class='collapsible-header is-clickable' data-controls='c-10'>
+                    <h3 class=''>¿En qué áreas puedo invertir?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Trabajamos con negocios de distintos rubros, lo que nos permite ofrecer
+                            proyectos de áreas como: Construcción, Desarrollos, Finanzas, Agro, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-11'>
+                <div class='collapsible-header is-clickable' data-controls='c-11'>
+                    <h3 class=''>¿Cuáles son los requisitos para poder participar en Black Hound?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">Los requisitos que debe cumplir un usuario son:
+                        </p>
+                        <ol class="block">
+                            <li>Ser persona jurídica o física (+18 años).</li>
+                            <li>Brindar los datos personales requeridos. </li>
+                            <li>Presentar la documentación solicitada a la hora de participar.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class='collapsible' id='c-12'>
+                <div class='collapsible-header is-clickable' data-controls='c-12'>
+                    <h3 class=''>¿Hay algún límite de capital para participar?</h3>
+                    <i class='collapsible-toggle'></i>
+                </div>
+                <div class='collapsible-body'>
+                    <div class='collapsible-content'>
+                        <p class="block">No.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class="contact">
+        <article class="cont">
+            <div class="contact-item is-flex tel"><img src="media/ico/tel.svg" alt="">
+                <div>
+                    <p>Contactate con soporte</p>
+                    <p class="has-text-weight-bold">+54 15 221</p>
+                </div>
+            </div>
+            <div class="contact-item is-flex mail"><img src="media/ico/mail.svg" alt="">
+                <div>
+                    <p>Podes mandarnos un mail</p>
+                    <p class="has-text-weight-bold">info@blackhound.com.ar</p>
+                </div>
+            </div>
+            <div class="contact-item is-flex social">
+                <a href=""><img src="media/ico/facebook.svg" alt=""></a>
+                <a href=""><img src="media/ico/ig.svg" alt=""></a>
+            </div>
+        </article>
+    </section>
+
+    <section class="cta-sub">
+        <a class="back-to-top" href="#hero"> <img src="media/ico/back-to-top.svg" alt=""></a>
+        <article class="cta-sub-cont">
+            <div class="menu">
+
+                <a href="index.html" class="">
+                    Inicio
+                </a>
+
+                <a href="" class="">
+                    Proyectos
+                </a>
+
+                <a href="" class="">
+                    Sobre Nosotros
+                </a>
+
+                <a href="" class=" terms">
+                    Terminos y condiciones
+                </a>
+
+            </div>
+
+            <div class="cta-sub-cont-form center-column">
+
+                <form action="" method="" class="">
+                    <h4 class="has-text-white">Newsletter</h4>
+                    <p class="has-text-cuarto">Recibí las últimas novedades sobre los negocios y sus finanzas</span>
+                    </p>
+
+                    <div class="is-flex">
+                        <input id="POST-email" type="text" name="email-suscribirme" placeholder="mail@ejemplo.com">
+                        <input onclick="sub()" type="submit" value="Enviar"
+                            class="button has-text-weight-medium has-text-cuarto">
+                    </div>
+                </form>
+            </div>
+            <div id="cta-sub-done" class="sub-done">
+                <div class="block is-flex">
+                    <img loading="lazy" src="media/ico/done.svg" alt="">
+                    <h4 class="has-text-weight-medium">¡Bienvenida!</h4>
+                </div>
+                <p class="block">Ya formas parte de nuestra red de emprendedoras.
+                    Pronto recibirás novedades. </p>
+
+            </div>
+        </article>
+    </section>
+
+
+    <footer id="footer" class="footer has-text-primary">
+        <article class="cont">
+
+            <div class="copy">
+                <div>
+                    <p>Todos los derechos reservados ©2021 Black Hound</p>
+                    <p>Empresa perteneciente a Grupo Delsud </p>
+                </div>
+                <p class="legales has-text-secondary">Black Hound no proporciona asesoramiento financiero y nada en esta
+                    web
+                    debe interpretarse como tal.
+                    La
+                    información que aparece en estas páginas es para fines de información general y no constituye un
+                    asesoramiento específico. Tampoco es una recomendación para invertir. En caso de tener alguna duda,
+                    deberá buscar asesoramiento financiero independiente. La información publicada en la Web respecto de
+                    las
+                    distintas alternativas de inversión no podrá ser considerada como asesoramiento en materia de
+                    inversión,
+                    teniendo, por tanto, el valor de comunicaciones comerciales de carácter general. Cualquier decisión
+                    adoptada por el Usuario constituirá una decisión informada e independiente de los mismos. El Usuario
+                    deberá realizar las comprobaciones, estudios y análisis que consideren pertinentes para adoptar la
+                    decisión, de la que Black Hound no responderá en ningún caso. El valor de sus inversiones puede
+                    subir o
+                    bajar. La rentabilidad mostrada (u objetivos) no son necesariamente indicativos de la verdadera
+                    rentabilidad futura. Los negocios y emprendimientos publicados en la Web no son objeto de
+                    autorización
+                    ni de supervisión por algún ente regulador. Las previsiones, e información presentadas por los
+                    emprendedores puede cambiar o no ser certera.</p>
+
+                <a href="" class=" terms">
+                    Terminos y condiciones
+                </a>
+            </div>
+
+        </article>
+    </footer>
+
+</body>
+<script src="js/bulma-collapsible.min.js"></script>
+<script src="js/burguermenu.js"></script>
+
+
+</html>
