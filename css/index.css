@@ -7727,11 +7727,15 @@ body {
 
 .header .navbar-brand .navbar-item {
   padding: 0px;
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
+  -webkit-column-gap: 11px;
+          column-gap: 11px;
   color: #cccccc;
   font-family: "jubilatregular", serif;
   font-size: 18px;
+}
+
+.header .navbar-brand .logo-d {
+  display: none;
 }
 
 .header .navbar a:hover {
@@ -8019,13 +8023,19 @@ body {
     max-height: initial;
   }
   .header .navbar-brand .navbar-item {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    -webkit-column-gap: 11px;
+            column-gap: 11px;
     color: #4d4d4d;
   }
   .header .navbar-brand p {
     font-size: 1.5rem;
     line-height: 1.18;
+  }
+  .header .navbar-brand .logo-d {
+    display: block;
+  }
+  .header .navbar-brand .logo-m {
+    display: none;
   }
   .header .navbar a {
     font-size: 1rem;
@@ -8640,7 +8650,7 @@ body {
     margin-bottom: 125px;
   }
   .reasons .cont h2 {
-    font-size: 29px;
+    font-size: 40px;
     line-height: 1.21;
   }
   .reasons-info {
