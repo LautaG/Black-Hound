@@ -41,7 +41,7 @@
 .glide__bullets {
     position: absolute;
     z-index: 2;
-    bottom: 0px;
+    top: 16%;
     left: 50%;
     display: inline-flex;
     list-style: none;
@@ -61,7 +61,8 @@
 }
 
 .glide__bullet {
-    background-color: #dadbdc;
+    z-index: 2;
+    background-color: #cccccc;
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -72,6 +73,17 @@
     line-height: 0;
     box-shadow: 0 .25em .5em 0 rgba(0, 0, 0, .1);
     margin: 0 12px
+}
+.glide__bullets::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 1px;
+    background-color: #cccccc;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .glide__bullet-hero {
@@ -88,17 +100,19 @@
 }
 
 .glide__bullet:focus {
-    outline: 0
+    outline: 0;
+    background-color: #f73521;
 }
 
 .glide__bullet:focus,
 .glide__bullet:hover {
     border: 2px solid #fff;
-    background-color: rgba(255, 255, 255, .5)
+    background-color: #f73521;
 }
 
 .glide__bullet--active {
-    background-color: #f73521
+    background-color: #f73521;
+    position: relative;z-index: 2;
 }
 
 .glide--swipeable {
@@ -113,17 +127,16 @@
     cursor: -webkit-grabbing
 }
 
-@media screen and (max-width: 960px) {
-.glide__bullets-hero {
+@media screen and (min-width: 960px) {
+.glide__bullets {
     position: absolute;
-    z-index: 4;
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
+    z-index: 2;
+    top: 23%;
+    left: 50%;
+    display: inline-flex;
     list-style: none;
-    transform: translate(50%,0%) rotate(90deg)
+    transform: translateX(-50%);
+    column-gap: 1.5rem;
 }
+
 }

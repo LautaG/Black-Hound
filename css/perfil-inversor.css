@@ -7708,6 +7708,11 @@ body {
   padding: 50px 40px;
 }
 
+.header .navbar-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  color: #4d4d4d;
+}
+
 .header .navbar-item {
   font-size: 1rem;
   font-weight: 500;
@@ -7736,11 +7741,6 @@ body {
 
 .header .navbar-brand .logo-d {
   display: none;
-}
-
-.header .navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.15) !important;
-  color: #4d4d4d;
 }
 
 .header .navbar a.button:hover {
@@ -8220,8 +8220,15 @@ body {
 }
 
 .formulario {
-  margin-top: 145px;
+  margin-top: 160px;
   margin-bottom: 76px;
+  /*
+    .glide__slides {
+        transform: none !important;
+        width: auto !important;
+        display: grid;
+        grid-template-areas: "slide"; //create a 1x1 grid where the single cell is called slide
+    }*/
 }
 
 .formulario .cont {
@@ -8258,7 +8265,11 @@ body {
           column-gap: 1rem;
 }
 
-.formulario .form-glide .controls button {
+.formulario .form-glide .controls p {
+  margin: 0px !important;
+}
+
+.formulario .form-glide .controls a {
   font-size: 21px;
   line-height: 28px;
   color: #fff;
@@ -8269,11 +8280,11 @@ body {
   cursor: pointer;
 }
 
-.formulario .form-glide .controls button:focus-visible {
+.formulario .form-glide .controls a:focus-visible {
   outline: none;
 }
 
-.formulario .form-glide .controls button.atras {
+.formulario .form-glide .controls a.atras {
   background-color: #4d4d4d;
 }
 
@@ -8311,11 +8322,6 @@ body {
   width: 46px;
 }
 
-.formulario .form-glide .bienvenido-info,
-.formulario .form-glide .final-info {
-  margin-bottom: 60px;
-}
-
 .formulario .form-glide .bienvenido-info h2,
 .formulario .form-glide .final-info h2 {
   font-size: 17px;
@@ -8341,6 +8347,10 @@ body {
 .formulario .form-glide .bienvenido input:focus-visible,
 .formulario .form-glide .final input:focus-visible {
   outline: none;
+}
+
+.formulario .form-glide .bienvenido-info {
+  margin-bottom: 60px;
 }
 
 .formulario .form-glide .choices {
@@ -8371,6 +8381,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio .wpcf7-list-item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8383,7 +8404,8 @@ body {
   line-height: 20px;
 }
 
-.formulario .form-glide .final .wpcf7-form-control.wpcf7-checkbox {
+.formulario .form-glide .ultimo .wpcf7-form-control,
+.formulario .form-glide .ultimo .wpcf7-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8394,27 +8416,192 @@ body {
   row-gap: 1rem;
 }
 
-.formulario .glide__slides {
-  -webkit-transform: none !important;
-          transform: none !important;
-  width: auto !important;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "slide";
+.formulario .form-glide .ultimo .wpcf7-form-control label,
+.formulario .form-glide .ultimo .wpcf7-checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.formulario .form-glide .ultimo .wpcf7-form-control input,
+.formulario .form-glide .ultimo .wpcf7-checkbox input {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.formulario .form-glide .ultimo p:not(:first-child),
+.formulario .form-glide .ultimo p:not(:last-child) {
+  margin-top: 20px;
+}
+
+.formulario .form-glide .ultimo input {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+.formulario .form-glide .ultimo input:focus-visible {
+  outline: none;
+}
+
+.formulario .form-glide .ultimo input.wpcf7-submit {
+  font-size: 21px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #f73521;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.formulario .form-glide .ultimo input.wpcf7-submit:focus-visible {
+  outline: none;
 }
 
 .formulario .glide__slide {
   position: relative;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: slide;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .formulario .glide__slide--active {
   z-index: 1;
   opacity: 1;
+}
+
+@media screen and (min-width: 960px) {
+  .formulario {
+    margin-top: 300px;
+    margin-bottom: 250px;
+  }
+  .formulario .cont {
+    max-width: 1125px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formulario .form-glide {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formulario .form-glide .bienvenido-title,
+  .formulario .form-glide .final-title {
+    margin-bottom: 3rem;
+  }
+  .formulario .form-glide .bienvenido-title h1,
+  .formulario .form-glide .bienvenido-title h2,
+  .formulario .form-glide .final-title h1,
+  .formulario .form-glide .final-title h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .formulario .form-glide .bienvenido-title img,
+  .formulario .form-glide .final-title img {
+    width: 72px;
+    margin-top: 10px;
+  }
+  .formulario .form-glide .bienvenido-info h2,
+  .formulario .form-glide .final-info h2 {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .formulario .form-glide .bienvenido-info p,
+  .formulario .form-glide .final-info p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .formulario .form-glide .bienvenido input,
+  .formulario .form-glide .final input {
+    max-width: 350px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .formulario .form-glide .bienvenido-info {
+    margin-bottom: 90px;
+  }
+  .formulario .form-glide .choices {
+    -ms-grid-rows: 150px auto auto;
+        grid-template-rows: 150px auto auto;
+  }
+  .formulario .form-glide .choices h2 {
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .formulario .form-glide .choices input {
+    height: 20px;
+    width: 20px;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  .formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio {
+    row-gap: 1rem;
+  }
+  .formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio .wpcf7-list-item label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio .wpcf7-list-item-label {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .formulario .form-glide .ultimo .wpcf7-form-control,
+  .formulario .form-glide .ultimo .wpcf7-checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    row-gap: none;
+    -webkit-column-gap: 78px;
+            column-gap: 78px;
+  }
+  .formulario .form-glide .ultimo .wpcf7-form-control input,
+  .formulario .form-glide .ultimo .wpcf7-checkbox input {
+    height: 22px;
+    width: 22px;
+  }
+  .formulario .form-glide .ultimo p:not(:first-child),
+  .formulario .form-glide .ultimo p:not(:last-child) {
+    margin-top: 50px;
+  }
+  .formulario .form-glide .ultimo .wpcf7-list-item-label {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .formulario .form-glide .ultimo input {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .formulario .form-glide .ultimo input:focus-visible {
+    outline: none;
+  }
 }
 /*# sourceMappingURL=perfil-inversor.css.map */

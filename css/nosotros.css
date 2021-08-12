@@ -7708,6 +7708,11 @@ body {
   padding: 50px 40px;
 }
 
+.header .navbar-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  color: #4d4d4d;
+}
+
 .header .navbar-item {
   font-size: 1rem;
   font-weight: 500;
@@ -7736,11 +7741,6 @@ body {
 
 .header .navbar-brand .logo-d {
   display: none;
-}
-
-.header .navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.15) !important;
-  color: #4d4d4d;
 }
 
 .header .navbar a.button:hover {
@@ -8320,11 +8320,6 @@ body {
   border-radius: 10px;
 }
 
-.hero-cta a:hover {
-  background-color: #f73521;
-  color: #fff;
-}
-
 .client {
   background-color: #262626;
   overflow: hidden;
@@ -8364,16 +8359,9 @@ body {
   height: 100%;
 }
 
-.client-slider li a .img-c {
-  opacity: 0;
-}
-
 .client-slider li a:hover img {
-  opacity: 0;
-}
-
-.client-slider li a:hover img.img-c {
-  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .info {
@@ -8473,6 +8461,10 @@ body {
     padding: 18px 25px;
     font-size: 23px;
     line-height: 1;
+  }
+  .hero-cta a:hover {
+    background-color: #b3b3b3;
+    color: #fff;
   }
   .client {
     padding-top: 57px !important;

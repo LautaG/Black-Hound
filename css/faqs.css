@@ -7708,6 +7708,11 @@ body {
   padding: 50px 40px;
 }
 
+.header .navbar-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  color: #4d4d4d;
+}
+
 .header .navbar-item {
   font-size: 1rem;
   font-weight: 500;
@@ -7736,11 +7741,6 @@ body {
 
 .header .navbar-brand .logo-d {
   display: none;
-}
-
-.header .navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.15) !important;
-  color: #4d4d4d;
 }
 
 .header .navbar a.button:hover {
@@ -8402,6 +8402,11 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+  }
+  .maincontainer .collapsible-body .empresas a:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 /*# sourceMappingURL=faqs.css.map */

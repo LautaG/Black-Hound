@@ -34,14 +34,10 @@
             </div>
 
             <ul id="navbar" class="navbar-menu is-justify-content-flex-end">
-                <li>
-                    <a href="index.html" class="navbar-item">
-                        Proyectos
-                    </a>
-                </li>
+
                 <li class="navbar-item has-dropdown is-hoverable">
-                    <a href="nosotros.html" class="navbar-item">
-                        Sobre nosotros
+                    <a href="proyectos.html" class="navbar-item">
+                        Proyectos
                     </a>
                     <div class="navbar-dropdown">
 
@@ -63,6 +59,11 @@
                             Ver todos
                         </a>
                     </div>
+                </li>
+                <li>
+                    <a href="nosotros.html" class="navbar-item">
+                        Sobre nosotros
+                    </a>
                 </li>
                 <li>
                     <a href="faqs.html" class="navbar-item">
@@ -125,7 +126,7 @@
 
 
                                             <div class="controls" data-glide-el="controls">
-                                                <button class="adelante" data-glide-dir=">">Comenzar</button>
+                                                <a class="adelante" data-glide-dir=">">Comenzar</a>
                                             </div>
                                         </li>
                                         <li class="glide__slide choices">
@@ -180,8 +181,8 @@
                                             </span>
 
                                             <div class="controls" data-glide-el="controls">
-                                                <button class="atras" data-glide-dir="<">Volver</button>
-                                                <button class="adelante" data-glide-dir=">">Continuar</button>
+                                                <a class="atras" data-glide-dir="<">Volver</a>
+                                                <a class="adelante" data-glide-dir=">">Continuar</a>
                                             </div>
                                         </li>
                                         <li class="glide__slide choices">
@@ -208,8 +209,8 @@
                                                                     75%</span></label></span></span></span>
                                             </p>
                                             <div class="controls" data-glide-el="controls">
-                                                <button class="atras" data-glide-dir="<">Volver</button>
-                                                <button class="adelante" data-glide-dir=">">Continuar</button>
+                                                <a class="atras" data-glide-dir="<">Volver</a>
+                                                <a class="adelante" data-glide-dir=">">Continuar</a>
                                             </div>
                                         </li>
                                         <li class="glide__slide choices">
@@ -238,8 +239,8 @@
                                                                     inflación.</span></label></span></span></span>
                                             </p>
                                             <div class="controls" data-glide-el="controls">
-                                                <button class="atras" data-glide-dir="<">Volver</button>
-                                                <button class="adelante" data-glide-dir=">">Continuar</button>
+                                                <a class="atras" data-glide-dir="<">Volver</a>
+                                                <a class="adelante" data-glide-dir=">">Continuar</a>
                                             </div>
                                         </li>
                                         <li class="glide__slide choices">
@@ -269,8 +270,8 @@
                                                                     años.</span></label></span></span></span>
                                             </p>
                                             <div class="controls" data-glide-el="controls">
-                                                <button class="atras" data-glide-dir="<">Volver</button>
-                                                <button class="adelante" data-glide-dir=">">Continuar</button>
+                                                <a class="atras" data-glide-dir="<">Volver</a>
+                                                <a class="adelante" data-glide-dir=">">Continuar</a>
                                             </div>
                                         </li>
                                         <li class="glide__slide choices">
@@ -287,14 +288,14 @@
                                                                     class="wpcf7-list-item-label">Dólares.</span></label></span></span></span>
                                             </p>
                                             <div class="controls" data-glide-el="controls">
-                                                <button class="atras" data-glide-dir="<">Volver</button>
-                                                <button class="adelante" data-glide-dir=">">Continuar</button>
+                                                <a class="atras" data-glide-dir="<">Volver</a>
+                                                <a class="adelante" data-glide-dir=">">Continuar</a>
                                             </div>
                                         </li>
                                         <li class="glide__slide ultimo">
                                             <div class="final">
                                                 <div class="final-title">
-                                                    <h2 f-title>¡Estupendo!</h2>
+                                                    <h2 class="f-title">¡Estupendo!</h2>
                                                 </div>
                                                 <div class="final-info">
                                                     <p>Nos comunicaremos en las próximas horas para enviarte el
@@ -315,34 +316,36 @@
                                                                     name="medio-comunicacion[]" value="E-mail"><span
                                                                     class="wpcf7-list-item-label">E-mail</span></label></span></span></span>
                                             </p>
-                                            <p><span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                        name="your-email" value="" size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                        aria-required="true" aria-invalid="false"></span>
-                                            </p>
-                                            <p><span class="wpcf7-form-control-wrap tel"><input type="tel" name="tel"
-                                                        value="" size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
-                                                        aria-required="true" aria-invalid="false"></span>
-                                            </p>
-                                            <p><input type="submit" value="Enviar"
-                                                    class="wpcf7-form-control wpcf7-submit"><span
-                                                    class="ajax-loader"></span>
-                                            </p>
+                                            <div class="datos">
+                                                <p><span class="wpcf7-form-control-wrap your-email"><input type="email"
+                                                            placeholder="E-mail" name="your-email" value="" size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                            aria-required="true" aria-invalid="false"></span>
+                                                </p>
+                                                <p><span class="wpcf7-form-control-wrap tel"><input type="tel"
+                                                            name="tel" placeholder="Teléfono" value="" size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                                                            aria-required="true" aria-invalid="false"></span>
+                                                </p>
+                                            </div>
                                             <div class="controls" data-glide-el="controls">
-                                                <button class="atras" data-glide-dir="<">Volver</button>
+                                                <a class="atras" data-glide-dir="<">Volver</a>
+                                                <p><input type="submit" value="Enviar"
+                                                        class="wpcf7-form-control wpcf7-submit"><span
+                                                        class="ajax-loader"></span>
+                                                </p>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="glide__bullets" data-glide-el="controls[nav]">
-                                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                                    <button class="glide__bullet" data-glide-dir="=4"></button>
-                                    <button class="glide__bullet" data-glide-dir="=5"></button>
-                                    <button class="glide__bullet" data-glide-dir="=6"></button>
+                                    <a class="glide__bullet" data-glide-dir="=0"></a>
+                                    <a class="glide__bullet" data-glide-dir="=1"></a>
+                                    <a class="glide__bullet" data-glide-dir="=2"></a>
+                                    <a class="glide__bullet" data-glide-dir="=3"></a>
+                                    <a class="glide__bullet" data-glide-dir="=4"></a>
+                                    <a class="glide__bullet" data-glide-dir="=5"></a>
+                                    <a class="glide__bullet" data-glide-dir="=6"></a>
                                 </div>
 
                             </div>
@@ -360,6 +363,131 @@
             </div>
         </article>
     </section>
+
+    <!-- <section class="formulario">
+        <article class="cont">
+
+
+
+            <div class="form-glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="bienvenido">
+                                <div class="bienvenido-title">
+                                    <h1 class="f-title">¡Bienvenido/a!</h1>
+                                    <img src="media/ico/chat-bubble.svg" alt="">
+                                </div>
+                                <div class="bienvenido-info">
+                                    <h2>Queremos que saques el mayor rédito posible de tus
+                                        inversiones.
+                                    </h2>
+                                    <p>Por eso un equipo especializado evaluará tus intereses y
+                                        preferencias para realizar tu perfil de inversor.
+                                        Solicitaremos
+                                        algunos datos de contacto para poder enviarte los resultados.
+                                    </p>
+                                </div>
+                                [text* nombre]
+                            </div>
+
+
+                            <div class="controls" data-glide-el="controls">
+                                <a class="adelante" data-glide-dir=">">Comenzar</a>
+                            </div>
+                        </li>
+                        <li class="glide__slide choices">
+                            <h2>¿Cómo definís tu conocimiento sobre las alternativas de inversión en
+                                el
+                                mercado de capitales?</h2>
+                            [radio conocimiento use_label_element default:1 "Nulo. No conozco ni realicé inversiones
+                            antes." "Poco. Sólo utilizo servicios bancarios (ej: Plazo Fijo)" "Intermedio. Realicé
+                            algunas
+                            inversiones y conozco los riesgos del mercado" "Experto. Tengo el conocimiento necesario y
+                            la
+                            experiencia"]
+
+                            <div class="controls" data-glide-el="controls">
+                                <a class="atras" data-glide-dir="<">Volver</a>
+                                <a class="adelante" data-glide-dir=">">Continuar</a>
+                            </div>
+                        </li>
+                        <li class="glide__slide choices">
+                            <h2>¿Qué porcentaje de tus ingresos/ahorros
+                                invertirías?</h2>
+                            [radio porcentaje use_label_element default:1 "Hasta el 10%" "Hasta el 25%" "Hasta el 50%"
+                            "Hasta el 75%"]
+                            <div class="controls" data-glide-el="controls">
+                                <a class="atras" data-glide-dir="<">Volver</a>
+                                <a class="adelante" data-glide-dir=">">Continuar</a>
+                            </div>
+                        </li>
+                        <li class="glide__slide choices">
+                            <h2>¿Qué esperas de tus inversiones?</h2>
+                            [radio expectativas use_label_element default:1 "Mantener el valor de mis ahorros." "Ganarle
+                            a
+                            la inflación." "Obtener rendimientos mayores al 5% sobre la tasa de inflación."]
+                            <div class="controls" data-glide-el="controls">
+                                <a class="atras" data-glide-dir="<">Volver</a>
+                                <a class="adelante" data-glide-dir=">">Continuar</a>
+                            </div>
+                        </li>
+                        <li class="glide__slide choices">
+                            <h2>¿Cuál es el plazo máximo que estarías dispuesto a mantener tus
+                                inversiones?</h2>
+                            [radio plazo use_label_element default:1 "1 año o menos." "Entre 1 y 5 años." "Entre 5 y 10
+                            años." "Más de 10 años."]
+                            <div class="controls" data-glide-el="controls">
+                                <a class="atras" data-glide-dir="<">Volver</a>
+                                <a class="adelante" data-glide-dir=">">Continuar</a>
+                            </div>
+                        </li>
+                        <li class="glide__slide choices">
+                            <h2>¿Con qué moneda te gustaría realizar tus operaciones?</h2>
+                            [radio moneda use_label_element default:1 "Pesos argentinos." "Dólares."]
+                            <div class="controls" data-glide-el="controls">
+                                <a class="atras" data-glide-dir="<">Volver</a>
+                                <a class="adelante" data-glide-dir=">">Continuar</a>
+                            </div>
+                        </li>
+                        <li class="glide__slide ultimo">
+                            <div class="final">
+                                <div class="final-title">
+                                    <h2 f-title>¡Estupendo!</h2>
+                                </div>
+                                <div class="final-info">
+                                    <p>Nos comunicaremos en las próximas horas para enviarte el
+                                        resultado junto con las recomendaciones estimadas. Seleccioná
+                                        el medio de tu preferencia:
+                                    </p>
+                                </div>
+                            </div>
+                            [checkbox medio-comunicacion use_label_element "Llamada" "Whatsapp" "E-mail"]
+
+                            [email* your-email]
+
+                            [tel* tel]
+
+                            [submit "Enviar"]
+                            <div class="controls" data-glide-el="controls">
+                                <a class="atras" data-glide-dir="<">Volver</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <a class="glide__bullet" data-glide-dir="=0"></a>
+                    <a class="glide__bullet" data-glide-dir="=1"></a>
+                    <a class="glide__bullet" data-glide-dir="=2"></a>
+                    <a class="glide__bullet" data-glide-dir="=3"></a>
+                    <a class="glide__bullet" data-glide-dir="=4"></a>
+                    <a class="glide__bullet" data-glide-dir="=5"></a>
+                    <a class="glide__bullet" data-glide-dir="=6"></a>
+                </div>
+
+            </div>
+        </article>
+    </section>-->
 
     <section class="cta-sub">
         <a class="back-to-top" href="#hero"> <img src="media/ico/back-to-top.svg" alt=""></a>
@@ -456,9 +584,8 @@
     const config_form = {
         type: "slider",
         perView: 1,
-        //     autoplay: 4500,
-        hoverpause: false,
-        animationDuration: 600,
+        rewind: false,
+        animationDuration: 300,
     };
     new Glide(".form-glide", config_form).mount();
 </script>
