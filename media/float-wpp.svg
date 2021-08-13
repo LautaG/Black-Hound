@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141.833" height="148.667" viewBox="0 0 141.833 148.667">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#000056"/>
+      <stop offset="0.386" stop-color="#7373a2" stop-opacity="0.549"/>
+      <stop offset="0.784" stop-color="#d8d8e5" stop-opacity="0.149"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.854" y1="0.146" x2="0.146" y2="0.854" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#60fc7c"/>
+      <stop offset="1" stop-color="#4ab161"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_785" data-name="Grupo 785" transform="translate(-115.188 -97.605)">
+    <circle id="Elipse_28" data-name="Elipse 28" cx="64.534" cy="64.534" r="64.534" transform="translate(127.954 117.204)" opacity="0.8" fill="url(#radial-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+    <circle id="Elipse_29" data-name="Elipse 29" cx="44.932" cy="44.932" r="44.932" transform="translate(115.188 131.994) rotate(-22.5)" fill="url(#linear-gradient)"/>
+    <path id="Trazado_874" data-name="Trazado 874" d="M126.392,160.232l3.746-13.976a25.878,25.878,0,1,1,10.3,10.212Zm14.747-9,.885.529a21,21,0,1,0-7.185-7.12l.544.891-2.09,7.8Z" transform="translate(23.226 21.505)" fill="#fff"/>
+    <path id="Trazado_875" data-name="Trazado 875" d="M152.976,127.922c-1.063-.636-2.446-1.346-3.7-.833-.962.39-1.573,1.893-2.2,2.661a.919.919,0,0,1-1.189.258,16.747,16.747,0,0,1-8.356-7.157,1.023,1.023,0,0,1,.132-1.4,5.622,5.622,0,0,0,1.515-2.465,5.4,5.4,0,0,0-.676-2.916c-.5-1.085-1.066-2.631-2.154-3.245a2.955,2.955,0,0,0-3.205.476,6.506,6.506,0,0,0-2.253,5.153,7.281,7.281,0,0,0,.2,1.635,13.585,13.585,0,0,0,1.567,3.617A28.484,28.484,0,0,0,134.3,126.2a25.272,25.272,0,0,0,7.1,6.595,21.539,21.539,0,0,0,4.431,2.108c1.736.572,3.282,1.168,5.157.814a6.249,6.249,0,0,0,4.674-3.479,3.025,3.025,0,0,0,.218-1.776C155.619,129.241,153.963,128.512,152.976,127.922Z" transform="translate(32.562 30.96)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

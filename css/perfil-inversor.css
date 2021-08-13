@@ -7682,6 +7682,15 @@ body {
   font-family: "jubilatbold", serif;
 }
 
+.wpp-float {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transform: scale(0.6) translate(40%, 40%);
+          transform: scale(0.6) translate(40%, 40%);
+}
+
 .header {
   position: fixed;
   z-index: 1000;
@@ -7699,13 +7708,17 @@ body {
   min-height: fit-content;
 }
 
+.header .navbar-menu {
+  margin-top: 22px;
+}
+
 .header .navbar-menu .button {
   border-radius: 10px;
 }
 
 .header .navbar-menu a {
   text-transform: uppercase;
-  padding: 50px 40px;
+  padding: 10px 40px;
 }
 
 .header .navbar-menu a:hover {
@@ -7889,6 +7902,8 @@ body {
 }
 
 .cta-sub {
+  position: relative;
+  z-index: 3;
   padding: 2.5rem 3rem 2rem 3rem;
   background-color: #262626;
 }
@@ -8030,6 +8045,10 @@ body {
 }
 
 @media screen and (min-width: 960px) {
+  .wpp-float {
+    -webkit-transform: scale(0.8) translate(13%, 20%);
+            transform: scale(0.8) translate(13%, 20%);
+  }
   .header {
     padding: 0px 100px 0px 100px;
     background: #fff;
@@ -8056,6 +8075,20 @@ body {
   .header .navbar-brand .logo-m {
     display: none;
   }
+  .header .navbar-menu {
+    margin-top: 0px;
+  }
+  .header .navbar-menu .button {
+    border-radius: 10px;
+  }
+  .header .navbar-menu a {
+    text-transform: uppercase;
+    padding: 50px 40px;
+  }
+  .header .navbar-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    color: #4d4d4d;
+  }
   .header .navbar a {
     font-size: 1rem;
   }
@@ -8066,6 +8099,22 @@ body {
     font-size: 20px;
     font-weight: 500 !important;
     line-height: 1.22;
+  }
+  .header .navbar-dropdown {
+    padding: 0px;
+  }
+  .header .navbar-dropdown a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 40px 15px 40px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .header .navbar-dropdown a:last-child {
+    border: none;
   }
   .menu-flotante {
     bottom: 50%;
@@ -8219,9 +8268,23 @@ body {
   }
 }
 
+.background-desktop {
+  display: none;
+}
+
+.background-mobile {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+}
+
 .formulario {
-  margin-top: 160px;
-  margin-bottom: 76px;
+  position: relative;
+  z-index: 3;
+  padding-top: 160px;
+  padding-bottom: 76px;
   /*
     .glide__slides {
         transform: none !important;
@@ -8342,6 +8405,7 @@ body {
   padding: 0.5rem;
   border: none;
   border-bottom: 1px solid #cccccc;
+  background-color: transparent;
 }
 
 .formulario .form-glide .bienvenido input:focus-visible,
@@ -8364,6 +8428,55 @@ body {
   font-size: 15px;
   text-align: center;
   font-weight: 600;
+}
+
+.formulario .form-glide .choices-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.formulario .form-glide .choices-cont-porcentaje, .formulario .form-glide .choices-cont-plazo, .formulario .form-glide .choices-cont-moneda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario .form-glide .choices-cont-monto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+  text-align: center;
+}
+
+.formulario .form-glide .choices-cont-monto h3 {
+  font-size: 15px;
+}
+
+.formulario .form-glide .choices-cont-monto input {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  background-color: transparent;
+}
+
+.formulario .form-glide .choices-cont-monto input:focus-visible {
+  outline: none;
 }
 
 .formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio {
@@ -8454,6 +8567,7 @@ body {
   padding: 0.5rem;
   border: none;
   border-bottom: 1px solid #cccccc;
+  background-color: transparent;
 }
 
 .formulario .form-glide .ultimo input:focus-visible {
@@ -8487,10 +8601,25 @@ body {
   opacity: 1;
 }
 
+.formulario .glide__bullets {
+  display: none;
+}
+
 @media screen and (min-width: 960px) {
+  .background-desktop {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+  }
+  .background-mobile {
+    display: none;
+  }
   .formulario {
-    margin-top: 300px;
-    margin-bottom: 250px;
+    padding-top: 300px;
+    padding-bottom: 250px;
   }
   .formulario .cont {
     max-width: 1125px;
@@ -8551,6 +8680,49 @@ body {
     width: 20px;
     -webkit-transform: translateY(1px);
             transform: translateY(1px);
+  }
+  .formulario .form-glide .choices-cont {
+    row-gap: 0px;
+  }
+  .formulario .form-glide .choices-cont-operaciones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 90px;
+            column-gap: 90px;
+  }
+  .formulario .form-glide .choices-cont-monto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+    text-align: start;
+  }
+  .formulario .form-glide .choices-cont-monto h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .formulario .form-glide .choices-cont-monto input {
+    position: relative;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    height: auto !important;
+    border-bottom: 1px solid #cccccc;
+    background-color: transparent;
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .formulario .form-glide .choices-cont-monto input:focus-visible {
+    outline: none;
   }
   .formulario .form-glide .choices .wpcf7-form-control.wpcf7-radio {
     row-gap: 1rem;

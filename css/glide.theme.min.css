@@ -41,7 +41,7 @@
 .glide__bullets {
     position: absolute;
     z-index: 2;
-    top: 16%;
+    top: 14%;
     left: 50%;
     display: inline-flex;
     list-style: none;
@@ -131,7 +131,7 @@
 .glide__bullets {
     position: absolute;
     z-index: 2;
-    top: 23%;
+    top: 20%;
     left: 50%;
     display: inline-flex;
     list-style: none;

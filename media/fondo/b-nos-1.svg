@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1140" height="914" viewBox="0 0 1140 914">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_220" data-name="Rectángulo 220" width="1140" height="914" transform="translate(780 2226)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_11" data-name="Enmascarar grupo 11" transform="translate(-780 -2226)" clip-path="url(#clip-path)">
+    <path id="Trazado_671" data-name="Trazado 671" d="M1699.986,3771.369c-20.857-59.841-15.124-125.546-4.1-187.953s27.135-124.575,26.287-187.941c-1.385-103.493-50.988-205.484-131.982-269.924s-191.873-89.835-292.684-66.387c-63.75,14.827-123.682,47.986-189.078,50.682-67.149,2.768-130.955-26.9-197.055-39.039-156.944-28.814-325.164,50.165-412.982,183.391s-96.161,311.938-31.889,457.989,196.038,258.078,346.937,309.953,318.835,45.86,470.211-4.6c74.226-24.745,144.9-59.762,220.177-81.094s158.418-28.008,229.966,3.658l103.922-54.877C1774.366,3883.526,1720.843,3831.21,1699.986,3771.369Z" transform="translate(355.936 -824.675)" fill="#e4e4e4" opacity="0.39"/>
+  </g>
+</svg>

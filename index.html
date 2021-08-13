@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Black Hound | Inicio</title>
 
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="wpp-float"><img src="media/float-wpp.svg" alt=""></div>
     <header id="header" class="header">
 
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -95,6 +96,7 @@
     </section>
 
     <section id="reasons" class="reasons">
+
         <span class="back-text">Black Hound <span class="middle-bt">Black Hound</span> <span class="final-bt">Black
                 Hound</span></span>
 
@@ -123,6 +125,8 @@
         </article>
     </section>
     <section id="invertir" class="invertir">
+        <div class="background-top"><img src="/media/fondo/b-index.svg" alt=""></div>
+        <div class="background-mobile"><img src="/media/fondo/b-index-m.svg" alt=""></div>
         <span class="participa">Participá con el capital que dispongas</span>
         <article class="cont">
 
@@ -155,7 +159,7 @@
     </section>
 
     <section id="info" class="info">
-
+        <div class="background-bottom"><img src="/media/fondo/b-index-1.svg" alt=""></div>
         <article class="cont">
 
             <article class="info-bases">
@@ -192,7 +196,7 @@
         <article class="cont">
             <h2>No pierdas más tiempo. <br> Poné tu dinero a trabajar.</h2>
             <div class="botones">
-                <a href="creditos.html" class="button is-white">
+                <a onclick="modalContacto()" class="button is-white">
                     Consultar
                 </a>
                 <a href="creditos.html" class="button is-primary">
@@ -324,6 +328,34 @@
         </article>
     </section>
 
+    <div id="modal-contacto" class="modal">
+        <div onclick="modalContactoClose()" class="modal-background"></div>
+
+        <div class="modal-content">
+            <div id="pop-up-form" class="pop-up-form">
+                <form action="" method="post" class="is-flex is-flex-direction-column">
+                    <input type="text" name="" id="" placeholder="Nombre y Apellido">
+                    <input type="tel" placeholder="Teléfono">
+                    <input class="form-control" type="email" name="" placeholder="Email">
+
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <a onclick="contacto()" class="button is-primary enviar">
+                        Enviar
+                    </a>
+                </form>
+            </div>
+            <div id="pop-up-exito" class="pop-up-exito">
+                <h4 class="has-text-weight-medium has-text-centered has-text-secondary-dark f-title">¡Recibido!</h4>
+
+                <p class="block has-text-centered has-text-secondary-dark">Gracias por comunicarte con nosotros.
+                    A la brevedad un miembro de nuestro equipo te responderá.
+                </p>
+            </div>
+            <button onclick="modalContactoClose()" class="modal-close is-large" aria-label="close"></button>
+        </div>
+
+    </div>
+
     <footer id="footer" class="footer has-text-primary">
         <article class="cont">
 
@@ -365,6 +397,7 @@
 
 <script src="js/burguermenu.js"></script>
 <script src="js/glide.min.js"></script>
+<script src="js/modales.js"></script>
 
 <script>
     const config_client = {
