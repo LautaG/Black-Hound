@@ -8,7 +8,7 @@ function modalContactoClose() {
   var element = document.getElementById("modal-contacto");
   element.classList.remove("is-active");
   var element = document.getElementById("htmlpadre");
-  element.classList.add("is-clipped");
+  element.classList.remove("is-clipped");
    
 
 }
